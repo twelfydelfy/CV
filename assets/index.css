@@ -85,9 +85,15 @@ body{
     font-size:38.39px;
     margin-top: 0;
 }
+.left-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
 .left-2 button{
     font-size: 21.59px;
-    text-align: center;
     color: white;
     height: 53.98px;
     width: 200px;
@@ -96,13 +102,152 @@ body{
     background-color: #433BFF;
     border: none;
     border-radius: 12px;
+    transition: all .15s ease-out;
+}
+.contact-me-button:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 5px 15px rgba(67, 59, 255, 1);
 }
 .download-cv-button{
     background-color: #9791FF;
     border:none;
     border-radius: 12px;
+    align-items: center;
+    text-align: center;
+    transition: all .15s ease-out;
 }
+
 .download-cv-button img{
-    height: 23.99px;
-    width: 23.99px;
+    height: 23px;
+    width: 23x;
+    margin-bottom: -4px;
+}
+.download-cv-button:hover{
+    transform: scale(1.1);
+    box-shadow:2px 5px 15px rgba(141, 155, 255, 1);
+}
+.left31{
+    font-weight: 500;
+    font-size: 28.79px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.left32{
+    font-weight: 500;
+    font-size: 21.59px;
+    margin-top: 0;
+    color: #7F7F7F;
+}
+.right-side{
+    margin-left: 7vw;
+    margin-top: 6vh;
+}
+.right-side img{
+    position: absolute;
+    width: 562.94px;
+    height: 509.01px;
+    z-index: 3; 
+    margin-left: -2vw;
+}
+.circle1{
+    position: absolute;
+    background-color: #DEDCFF;
+    width: 523.36px;
+    height: 523.36px;
+    border-radius: 500px;
+    z-index: 1;
+}
+.circle2{
+    position: absolute;
+    z-index: 2;
+    background-color: #433BFF;
+    height: 291.66px;
+    width: 291.66px;
+    border-radius: 200px;
+    bottom: 15vh;
+    right: 12vw;
+}
+.black-bar{
+    position: absolute;
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    height: 13vh;
+    margin-top: 6vh;
+    background-color: black;
+    z-index: 4;
+    border-radius: 53px;
+    justify-content: space-evenly;
+}
+.bb1, .bb2, .bb3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    margin-left: -2vw;
+}
+.black-bar h1{
+    color: white;
+    font-weight: 600;
+    font-size: 54.59px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.black-bar p{
+    color: white;
+    font-weight: 500;
+    font-size: 21.33px;
+    margin-top: 5px;
+}
+.about-me{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15vw;
+    max-width: 75vw;
+    margin-top: 30vh;
+}
+.about-me h1{
+    font-weight: bold;
+    font-size: 45px;
+}
+.about-me h2{
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.about-me p{
+    font-size: 22px;
+    line-height: 1.6;
+}
+.about-me span{
+    color: #433BFF;
+}
+.about-left-side{
+    display: flex;
+    flex-direction: column;
+}
+.about-right-side img{
+    width: 400px;
+    height: 360px;
+    margin-left: 10vw;
+    margin-top: 5vh;
+}
+.projects{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15vw;
+}
+.projects h1{
+    color: #433BFF;
+    font-weight: bold;
+    font-size: 45px;
+}
+.projects p{
+    font-size: 22px;
+    line-height: 1.8;
+    font-weight: 400;
 }
