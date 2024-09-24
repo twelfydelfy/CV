@@ -1,15 +1,14 @@
 body{
     background-color: #F2F2F2;
-    font-family: Inter
+    font-family: Inter;
 }
 .header{
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
-    background-color: #E9E9E9;
     height: 50px;
     width: 100vw;
     align-items: center;
@@ -19,9 +18,18 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-weight: 700;
+    font-weight:500;
     width: 50vw;
     left: 25%;
+}
+.header-text p{
+    transition: all linear 0.08s;
+    cursor: pointer;
+}
+.header-text p:hover{
+    color: #433BFF;
+    transform: scale(1.15);
+    font-weight: 700;
 }
 .lightmode{
     display: flex;
@@ -45,4 +53,56 @@ body{
 }
 .lightmode:hover{
     background-color: rgb(53, 53, 53);
+}
+.landing-page{
+    display: flex;
+    margin-top: 20vh;
+    margin-left: 15vw;
+    max-width: 70vw;
+}
+.hitext p{
+    font-size:76.77px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.hitext span{
+    color: #433BFF;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+}
+.left-upper{
+    display: flex;
+    margin-bottom: 0;
+}
+.left-lower{
+    display: flex;
+    flex-direction: column;
+}
+.left-1 p{
+    font-weight: 500;
+    font-size:38.39px;
+    margin-top: 0;
+}
+.left-2 button{
+    font-size: 21.59px;
+    text-align: center;
+    color: white;
+    height: 53.98px;
+    width: 200px;
+}
+.contact-me-button{
+    background-color: #433BFF;
+    border: none;
+    border-radius: 12px;
+}
+.download-cv-button{
+    background-color: #9791FF;
+    border:none;
+    border-radius: 12px;
+}
+.download-cv-button img{
+    height: 23.99px;
+    width: 23.99px;
 }
