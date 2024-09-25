@@ -251,3 +251,17 @@ body{
     line-height: 1.8;
     font-weight: 400;
 }
+.projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10vh;
+    column-gap: 52px;
+    width: 80%;
+    margin-left: 10vw;
+}
+.prj1, .prj2, .prj3{
+    width: 407px;
+    height: 218.6px;
+    background-color: #CCCCCC;
+    filter: grayscale(1);
+}
