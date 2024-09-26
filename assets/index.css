@@ -263,9 +263,38 @@ body{
 .prj1, .prj2, .prj3{
     width: 407px;
     height: 218.6px;
-    background-color: #CCCCCC;
-    filter: grayscale(1);
+    border: 1px solid black;
+    filter: grayscale(100%);
+    transition: all ease-out 0.15s;
 }
+.prj2hidden{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transform: scale(0.01);
+}
+.links{
+    display: flex;
+    flex-direction: row;
+}
+.prj2:hover .prj2hidden{
+    opacity: 1;
+    transform: scale(1);
+}
+.prj1:hover, .prj2:hover, .prj3:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+    margin-bottom: 10vh;
+}
+.prj2 img, .prj1 img, .prj3 img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+
+}
+
 .form{
     display: flex;
     flex-direction: row;
