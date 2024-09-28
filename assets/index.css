@@ -4,9 +4,19 @@ body{
     overflow-x: hidden;
     
 }
-@keyframes landings{
+@keyframes landings-right{
     0%{
         transform: translateX(50vw);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes landings-left{
+    0%{
+        transform: translateX(-50vw);
         opacity: 0;
     }
     100%{
@@ -22,6 +32,11 @@ body{
 .fade-in2{
     opacity: 0;
     transform: translateX(50vw);
+    transition: all 0s;
+}
+.fade-in3{
+    opacity: 0;
+    transform: translateX(-50vw);
     transition: all 0s;
 }
 .visible{
@@ -85,7 +100,7 @@ body{
     margin-top: 20vh;
     margin-left: 15vw;
     max-width: 70vw;
-    animation-name: landings;
+    animation-name: landings-right;
     animation-duration: 1s;
 }
 .hitext p{
@@ -185,16 +200,7 @@ body{
     border-radius: 500px;
     z-index: 1;
 }
-.circle2{
-    position: absolute;
-    z-index: 2;
-    background-color: #433BFF;
-    height: 291.66px;
-    width: 291.66px;
-    border-radius: 200px;
-    bottom: 15vh;
-    right: 12vw;
-}
+
 .black-bar{
     position: absolute;
     width: 90vw;
@@ -207,7 +213,7 @@ body{
     z-index: 4;
     border-radius: 53px;
     justify-content: space-evenly;
-    animation-name: landings;
+    animation-name: landings-left;
     animation-duration: 1s;
 }
 .bb1, .bb2, .bb3{
@@ -463,4 +469,6 @@ hr{
 }
 .final-text{
     text-align: center;
+    margin-bottom: 0;
+    font-weight: 400;
 }
