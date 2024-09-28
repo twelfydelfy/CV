@@ -1,7 +1,32 @@
 body{
     background-color: #F2F2F2;
     font-family: Inter;
+    overflow-x: hidden;
     
+}
+@keyframes landings{
+    0%{
+        transform: translateX(50vw);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.fade-in{
+    opacity: 0;
+    transform: translateX(50vw);
+    transition: all 0s;
+}
+.fade-in2{
+    opacity: 0;
+    transform: translateX(50vw);
+    transition: all 0s;
+}
+.visible{
+    opacity: 1;
+    transform: translateX(0);
 }
 .header{
     display: flex;
@@ -60,6 +85,8 @@ body{
     margin-top: 20vh;
     margin-left: 15vw;
     max-width: 70vw;
+    animation-name: landings;
+    animation-duration: 1s;
 }
 .hitext p{
     font-size:76.77px;
@@ -180,6 +207,8 @@ body{
     z-index: 4;
     border-radius: 53px;
     justify-content: space-evenly;
+    animation-name: landings;
+    animation-duration: 1s;
 }
 .bb1, .bb2, .bb3{
     display: flex;
@@ -428,4 +457,10 @@ body{
 .boximg{
     height: 60px;
     width: 60px;
+}
+hr{
+    margin-top: 50px;
+}
+.final-text{
+    text-align: center;
 }
