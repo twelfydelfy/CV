@@ -61,23 +61,29 @@ window.addEventListener('scroll', scrollAnimation3);
 
 
 let isLightMode = true;
+const gthub = document.getElementById("boximg");
+const lkdn = document.getElementById("boximg2");
 
 function toggleColors() {
     let root = document.documentElement;
 
     if (isLightMode) {
-        // Switch to dark mode
         root.style.setProperty('--primary-color', '#171717');
         root.style.setProperty('--secondary-color', '#FFFFFF'); 
         root.style.setProperty('--third-color', '#9791FF'); 
         root.style.setProperty('--fourth-color', '#433BFF'); 
         root.style.setProperty('--sixth-color', "#505050");
+        gthub.src="assets/images/github1.png";
+        lkdn.src="assets/images/linkedin1.png";
+
     } else {
         root.style.setProperty('--primary-color', '#f2f2f2');
         root.style.setProperty('--secondary-color', '#000000'); 
         root.style.setProperty('--third-color', '#433BFF'); 
         root.style.setProperty('--fourth-color', '#9791FF'); 
         root.style.setProperty('--sixth-color', "#E5E4E4");
+        gthub.src="assets/images/github/png";
+        lkdn.src="assets/images/linkedin.png";
     }
 
     isLightMode = !isLightMode;

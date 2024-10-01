@@ -429,7 +429,7 @@ p, h1, h2{
     padding-left: 5px;
 }
 .submit-button{
-    background-color: var(--fourth-color);
+    background-color: var(--third-color);
     color: white;
     font-size: 15px;
     font-weight: 500;
