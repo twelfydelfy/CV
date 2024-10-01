@@ -1,28 +1,25 @@
+const colorToggle = document.getElementById('lightmode');
 const image = document.getElementById('sunImage');
 
-    // Add event listener for hover (mouseover)
+
     image.addEventListener('mouseover', () => {
-        image.src = 'assets/images/sun1.png';  // Change to moon image on hover
+        image.src = 'assets/images/sun1.png'; 
     });
 
-    // Add event listener for when the mouse leaves (mouseout)
     image.addEventListener('mouseout', () => {
         image.src = 'assets/images/sun.png'; 
     });
 
 
 
-// Function to handle the scroll animation
 function scrollAnimation() {
     const elements = document.querySelectorAll('.fade-in');
     
     elements.forEach(element => {
         const rect = element.getBoundingClientRect();
         
-        // Calculate how far the element is from the top of the viewport
         const scrollPercent = Math.max(0, Math.min(1, 1.65 - rect.top / (window.innerHeight * 1)));
         
-        // Apply dynamic opacity and translation based on scrollPercent
         element.style.opacity = scrollPercent;
         element.style.transform = `translateX(${50 * (1 - scrollPercent)}vw)`;
     });
@@ -34,10 +31,8 @@ function scrollAnimation2() {
     elements.forEach(element => {
         const rect = element.getBoundingClientRect();
         
-        // Calculate how far the element is from the top of the viewport
         const scrollPercent = Math.max(0, Math.min(1, 1.7 - rect.top / (window.innerHeight * 1)));
         
-        // Apply dynamic opacity and translation based on scrollPercent
         element.style.opacity = scrollPercent;
         element.style.transform = `translateX(${50 * (1 - scrollPercent)}vw)`;
     });
@@ -49,20 +44,43 @@ function scrollAnimation3() {
     elements.forEach(element => {
         const rect = element.getBoundingClientRect();
         
-        // Calculate how far the element is from the top of the viewport
         const scrollPercent = Math.max(0, Math.min(1, 1.65 - rect.top / (window.innerHeight * 1)));
         
-        // Apply dynamic opacity and translation based on scrollPercent
         element.style.opacity = scrollPercent;
         element.style.transform = `translateX(${-50 * (1 - scrollPercent)}vw)`;
     });
 }
-// Attach scroll event listener
 window.addEventListener('scroll', scrollAnimation);
 window.addEventListener('scroll', scrollAnimation2);
 window.addEventListener('scroll', scrollAnimation3);
 
-// Run once on page load in case the elements are already in view
 window.addEventListener('load', scrollAnimation);
 window.addEventListener('load', scrollAnimation2);
 window.addEventListener('scroll', scrollAnimation3);
+
+
+
+let isLightMode = true;
+
+function toggleColors() {
+    let root = document.documentElement;
+
+    if (isLightMode) {
+        // Switch to dark mode
+        root.style.setProperty('--primary-color', '#171717');
+        root.style.setProperty('--secondary-color', '#FFFFFF'); 
+        root.style.setProperty('--third-color', '#9791FF'); 
+        root.style.setProperty('--fourth-color', '#433BFF'); 
+        root.style.setProperty('--sixth-color', "#505050");
+    } else {
+        root.style.setProperty('--primary-color', '#f2f2f2');
+        root.style.setProperty('--secondary-color', '#000000'); 
+        root.style.setProperty('--third-color', '#433BFF'); 
+        root.style.setProperty('--fourth-color', '#9791FF'); 
+        root.style.setProperty('--sixth-color', "#E5E4E4");
+    }
+
+    isLightMode = !isLightMode;
+}
+
+colorToggle.addEventListener('click', toggleColors);
