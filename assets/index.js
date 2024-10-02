@@ -60,7 +60,12 @@ window.addEventListener('scroll', scrollAnimation3);
 
 
 
-let isLightMode = true;
+if (localStorage.getItem('isLightMode') !== null) {
+    isLightMode = JSON.parse(localStorage.getItem('isLightMode'));
+}else{
+    isLightMode = true;
+}
+
 const gthub = document.getElementById("boximg");
 const lkdn = document.getElementById("boximg2");
 
@@ -75,6 +80,7 @@ function toggleColors() {
         root.style.setProperty('--sixth-color', "#505050");
         gthub.src="assets/images/github1.png";
         lkdn.src="assets/images/linkedin1.png";
+        localStorage.setItem('isLightMode', true);
 
     } else {
         root.style.setProperty('--primary-color', '#f2f2f2');
@@ -87,6 +93,7 @@ function toggleColors() {
     }
 
     isLightMode = !isLightMode;
+    localStorage.setItem('isLightMode', false);
 }
 
 colorToggle.addEventListener('click', toggleColors);

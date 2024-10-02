@@ -410,6 +410,7 @@ p, h1, h2{
 }
 .email-input{
     background-color: var(--sixth-color);
+    color: var(--seventh-color);
     border: none;
     height: 32px;
     margin-top: 10px;
