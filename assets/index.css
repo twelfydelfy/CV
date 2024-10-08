@@ -39,6 +39,7 @@ p, h1, h2{
         opacity: 1;
     }
 }
+/*
 .fade-in{
     opacity: 0;
     transform: translateX(50vw);
@@ -57,7 +58,7 @@ p, h1, h2{
 .visible{
     opacity: 1;
     transform: translateX(0);
-}
+}*/
 .header{
     display: flex;
     flex-direction: row;
@@ -167,6 +168,7 @@ p, h1, h2{
     border: none;
     border-radius: 12px;
     transition: all .15s ease-out;
+    color: white !important;
 }
 .contact-me-button:hover{
     transform: scale(1.1);
@@ -179,6 +181,7 @@ p, h1, h2{
     align-items: center;
     text-align: center;
     transition: all .15s ease-out;
+    color: white !important;
 }
 
 .download-cv-button img{
@@ -263,8 +266,10 @@ p, h1, h2{
     display: flex;
     flex-direction: row;
     margin-left: 15vw;
-    max-width: 75vw;
+    max-width: 75%;
     margin-top: 30vh;
+    flex-wrap: wrap;
+
 }
 .about-me h1{
     font-weight: bold;
@@ -279,6 +284,7 @@ p, h1, h2{
 .about-me p{
     font-size: 22px;
     line-height: 1.6;
+    text-wrap: wrap;
 }
 .about-me span{
     color: var(--third-color);
@@ -286,6 +292,7 @@ p, h1, h2{
 .about-left-side{
     display: flex;
     flex-direction: column;
+
 }
 .about-right-side img{
     width: 400px;
@@ -496,4 +503,137 @@ hr{
     text-align: center;
     margin-bottom: 0;
     font-weight: 400;
+}
+
+@media (max-width:1600px) {
+    .projects-grid, .projects{
+        transform: scale(0.89);
+        margin-left: 6.5%;
+    }
+    .about-me{
+        transform: scale(0.89);
+        justify-content: space-evenly;
+        flex-direction: row;
+        max-width: 85%;
+        margin-left: 6.5%;
+    }
+    .about-right-side img{
+        transform: scale(0.89);
+        margin-top: 10vh;
+    }
+    .landing-page{
+        margin-left: 12vw;
+        transform: scale(0.89);
+        margin-top: 10vh;
+    }
+    .black-bar{
+        margin-top: 0vh;
+        height: 14vh;
+    }
+    .name-input{
+        margin-bottom: 10px;
+    }
+    .form{
+        transform: scale(0.89);
+    }
+    .box1, .box2{
+        transform: scale(0.89);
+        margin-left: 0;
+    }
+}
+@media (max-width: 480px){
+    body{
+        overflow-x:hidden;
+        white-space:nowrap;
+    }
+    .header-text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 70%;
+    }
+    .header-text a{
+        font-size: 14px;
+    }
+    .hitext p{
+        font-size: 30px;
+    }
+    .landing-page{
+        flex-direction: column;
+        margin-left: 0;
+        display: flex;
+    }
+    .right-side img, .circle1{
+        transform: scale(0.6);
+    }
+    .right-side{
+        margin-left: 0;
+        margin-top: -100px;
+    }
+    .left-side{
+        justify-content: center;
+    }
+    .left-1 p{
+        font-size: 20px;
+    }
+    .left-2 button{
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .download-cv-button{
+        padding-bottom: 7px;
+    }
+    .left-2 img{
+        transform: scale(0.65);
+        margin-bottom: -6px;
+        margin-left: 0;
+    }
+    .left31{
+        font-size: 15.45px;    
+    }
+    .left32{
+        font-size: 13.9px;
+    }
+    .black-bar{
+        position: absolute;
+        margin-top: 300px;
+        height: 80px;
+    }
+    .black-bar h1{
+        font-size: 25px;
+    }
+    .black-bar p{
+        font-size: 13px;
+    }
+    .about-me{
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 100%;
+        flex-direction: column;
+    }
+    .about-me h1{
+        font-size: 26px;
+    }
+    .about-me h2{
+        font-size: 16.5px;
+    }
+    .about-me p{
+        font-size: 14px;
+    }
+    .about-right-side img{
+        display: none;
+    }
+    .projects{
+        margin-top: 5%;
+        margin-left: 0;
+    }
+    .projects h1{
+        font-size: 26px;
+    }
+    .projects p{
+        font-size: 14px;
+        text-wrap: wrap;
+    }
+    
 }

@@ -11,7 +11,7 @@ const image = document.getElementById('sunImage');
     });
 
 
-
+/*
 function scrollAnimation() {
     const elements = document.querySelectorAll('.fade-in');
     
@@ -59,7 +59,7 @@ window.addEventListener('load', scrollAnimation2);
 window.addEventListener('scroll', scrollAnimation3);
 
 
-
+*/
 if (localStorage.getItem('isLightMode') !== null) {
     isLightMode = JSON.parse(localStorage.getItem('isLightMode'));
 }else{
@@ -77,7 +77,7 @@ function toggleColors() {
         root.style.setProperty('--secondary-color', '#FFFFFF'); 
         root.style.setProperty('--third-color', '#9791FF'); 
         root.style.setProperty('--fourth-color', '#433BFF'); 
-        root.style.setProperty('--sixth-color', "#505050");
+        root.style.setProperty('--sixth-color', "#8e8e8e");
         gthub.src="assets/images/github1.png";
         lkdn.src="assets/images/linkedin1.png";
         localStorage.setItem('isLightMode', true);
@@ -88,12 +88,13 @@ function toggleColors() {
         root.style.setProperty('--third-color', '#433BFF'); 
         root.style.setProperty('--fourth-color', '#9791FF'); 
         root.style.setProperty('--sixth-color', "#E5E4E4");
-        gthub.src="assets/images/github/png";
+        gthub.src="assets/images/github.png";
         lkdn.src="assets/images/linkedin.png";
     }
 
     isLightMode = !isLightMode;
     localStorage.setItem('isLightMode', false);
 }
+toggleColors();
 
 colorToggle.addEventListener('click', toggleColors);
