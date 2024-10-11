@@ -57,14 +57,16 @@ window.addEventListener('scroll', scrollAnimation3);
 window.addEventListener('load', scrollAnimation);
 window.addEventListener('load', scrollAnimation2);
 window.addEventListener('scroll', scrollAnimation3);
-
-
 */
+
 if (localStorage.getItem('isLightMode') !== null) {
     isLightMode = JSON.parse(localStorage.getItem('isLightMode'));
 }else{
     isLightMode = true;
 }
+
+var lightmodebutton = document.querySelector('.lightmode');
+lightmodebutton.addEventListener('click', toggleColors);
 
 const gthub = document.getElementById("boximg");
 const lkdn = document.getElementById("boximg2");
@@ -97,4 +99,19 @@ function toggleColors() {
 }
 toggleColors();
 
-colorToggle.addEventListener('click', toggleColors);
+
+const prj2 = document.querySelector('.prj2');
+const prj2hidden = document.querySelector('.prj2hidden');
+var prj2a = 0;  
+
+prj2.addEventListener('click', function() {
+    if (prj2a === 0) {
+        prj2.classList.add('active');
+        prj2hidden.classList.add('active');
+        prj2a = 1;  
+    } else if(prj2a===1){
+        prj2.classList.remove('active');
+        prj2hidden.classList.remove('active');
+        prj2a = 0;
+    }
+});
