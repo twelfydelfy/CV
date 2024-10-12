@@ -746,7 +746,7 @@ hr{
         align-items: center;
     }
 }
-@media (hover: none) and (max-width:409px){
+@media(max-width:409px){
     .black-bar{
         width: 100%;
         margin-left: -2%;
@@ -777,10 +777,13 @@ hr{
     .prj2hidden{
         transform: scale(0.6);
     }
-    /*.prj2.active{
+    .prj2:hover{
         transform: scale(0.8);
-    }*/
-    .projects-grid{
+    }
+    .prj2hidden:hover{
+        transform: scale(0.9);
+    }
+        .projects-grid{
         width: 100%;
         align-items: center;
     }
