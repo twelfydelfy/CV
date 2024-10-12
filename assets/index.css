@@ -784,4 +784,7 @@ hr{
         width: 100%;
         align-items: center;
     }
+    .prj2:hover{
+        display: none;
+    }
 }
