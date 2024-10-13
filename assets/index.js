@@ -21,9 +21,13 @@ function scrollAnimation() {
         if(window.innerWidth >= 481){
         element.style.opacity = scrollPercent;
         element.style.transform = `translateX(${50 * (1 - scrollPercent)}vw)`;}
-        else if(window.innerWidth <= 480){
+        else if(window.innerWidth <= 480 && window.innerWidth >= 410){
             element.style.opacity = scrollPercent;
         element.style.transform = `translateX(${20 * (1 - scrollPercent)}vw)`;}
+        else if(window.innerWidth <= 409){
+            element.style.opacity = scrollPercent;
+        element.style.transform = `translateX(${15 * (1 - scrollPercent)}vw)`;
+        }
         
     });
 }
@@ -37,9 +41,13 @@ function scrollAnimation2() {
         if(window.innerWidth >= 481){
         element.style.opacity = scrollPercent;
         element.style.transform = `translateX(${50 * (1 - scrollPercent)}vw)`;}
-        else if(window.innerWidth <= 480){
+        else if(window.innerWidth <= 480 && window.innerWidth >= 410){
             element.style.opacity = scrollPercent;
         element.style.transform = `translateX(${25 * (1 - scrollPercent)}vw)`;
+        }
+        else if(window.innerWidth <=409){
+            element.style.opacity = scrollPercent;
+        element.style.transform = `translateX(${15 * (1 - scrollPercent)}vw)`;
         }
     });
 }
@@ -53,7 +61,11 @@ function scrollAnimation3() {
         if(window.innerWidth >= 481){
         element.style.opacity = scrollPercent;
         element.style.transform = `translateX(${-50 * (1 - scrollPercent)}vw)`;}
-        else if(window.innerWidth <= 480){
+        else if(window.innerWidth <= 480 && window.innerWidth >=410){
+            element.style.opacity = scrollPercent;
+        element.style.transform = `translateX(${-100 * (1 - scrollPercent)}vw)`;
+        }
+        else if(window.innerWidth <=409){
             element.style.opacity = scrollPercent;
         element.style.transform = `translateX(${-100 * (1 - scrollPercent)}vw)`;
         }
