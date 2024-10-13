@@ -11,17 +11,20 @@ const image = document.getElementById('sunImage');
     });
 
 
-/*
+
 function scrollAnimation() {
     const elements = document.querySelectorAll('.fade-in');
     
     elements.forEach(element => {
         const rect = element.getBoundingClientRect();
-        
         const scrollPercent = Math.max(0, Math.min(1, 1.65 - rect.top / (window.innerHeight * 1)));
-        
+        if(window.innerWidth >= 481){
         element.style.opacity = scrollPercent;
-        element.style.transform = `translateX(${50 * (1 - scrollPercent)}vw)`;
+        element.style.transform = `translateX(${50 * (1 - scrollPercent)}vw)`;}
+        else if(window.innerWidth <= 480){
+            element.style.opacity = scrollPercent;
+        element.style.transform = `translateX(${20 * (1 - scrollPercent)}vw)`;}
+        
     });
 }
 
@@ -30,11 +33,14 @@ function scrollAnimation2() {
     
     elements.forEach(element => {
         const rect = element.getBoundingClientRect();
-        
         const scrollPercent = Math.max(0, Math.min(1, 1.7 - rect.top / (window.innerHeight * 1)));
-        
+        if(window.innerWidth >= 481){
         element.style.opacity = scrollPercent;
-        element.style.transform = `translateX(${50 * (1 - scrollPercent)}vw)`;
+        element.style.transform = `translateX(${50 * (1 - scrollPercent)}vw)`;}
+        else if(window.innerWidth <= 480){
+            element.style.opacity = scrollPercent;
+        element.style.transform = `translateX(${25 * (1 - scrollPercent)}vw)`;
+        }
     });
 }
 
@@ -43,11 +49,14 @@ function scrollAnimation3() {
     
     elements.forEach(element => {
         const rect = element.getBoundingClientRect();
-        
         const scrollPercent = Math.max(0, Math.min(1, 1.65 - rect.top / (window.innerHeight * 1)));
-        
+        if(window.innerWidth >= 481){
         element.style.opacity = scrollPercent;
-        element.style.transform = `translateX(${-50 * (1 - scrollPercent)}vw)`;
+        element.style.transform = `translateX(${-50 * (1 - scrollPercent)}vw)`;}
+        else if(window.innerWidth <= 480){
+            element.style.opacity = scrollPercent;
+        element.style.transform = `translateX(${-100 * (1 - scrollPercent)}vw)`;
+        }
     });
 }
 window.addEventListener('scroll', scrollAnimation);
@@ -57,7 +66,7 @@ window.addEventListener('scroll', scrollAnimation3);
 window.addEventListener('load', scrollAnimation);
 window.addEventListener('load', scrollAnimation2);
 window.addEventListener('scroll', scrollAnimation3);
-*/
+
 
 if (localStorage.getItem('isLightMode') !== null) {
     isLightMode = JSON.parse(localStorage.getItem('isLightMode'));

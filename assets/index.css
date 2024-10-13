@@ -39,7 +39,7 @@ p, h1, h2{
         opacity: 1;
     }
 }
-/*
+
 .fade-in{
     opacity: 0;
     transform: translateX(50vw);
@@ -58,7 +58,7 @@ p, h1, h2{
 .visible{
     opacity: 1;
     transform: translateX(0);
-}*/
+}
 .header{
     display: flex;
     flex-direction: row;
