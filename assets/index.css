@@ -183,12 +183,6 @@ p, h1, h2{
     transition: all .15s ease-out;
     color: white !important;
 }
-
-.download-cv-button img{
-    height: 23px;
-    width: 23x;
-    margin-bottom: -4px;
-}
 .download-cv-button:hover{
     transform: scale(1.1);
     box-shadow:2px 5px 15px rgba(141, 155, 255, 1);
@@ -610,9 +604,6 @@ hr{
         height: 35px;
         font-size: 14px;
     }
-    .download-cv-button{
-        padding-bottom: 7px;
-    }
     .left-2 img{
         transform: scale(0.65);
         margin-bottom: -6px;
@@ -670,10 +661,10 @@ hr{
         align-items: center;
     }
     .prj1, .prj2, .prj3{
-        transform: scale(0.7) !important;
+        transform: scale(0.8) !important;
     }
     .prj2hidden{
-        transform: scale(0.7);
+        transform: scale(0.8);
     }
     .prj2hidden p{
         font-size: 10px;
@@ -772,13 +763,13 @@ hr{
         text-wrap: wrap;
     }
     .prj1, .prj2, .prj3{
-        transform: scale(0.6) !important;
+        transform: scale(0.75) !important;
     }
     .prj2hidden{
-        transform: scale(0.6);
+        transform: scale(0.75);
     }
     .prj2:hover{
-        transform: scale(0.8);
+        transform: scale(0.85);
     }
     .prj2hidden:hover{
         transform: scale(0.9);
