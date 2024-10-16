@@ -26,7 +26,7 @@ function scrollAnimation() {
         element.style.transform = `translateX(${20 * (1 - scrollPercent)}vw)`;}
         else if(window.innerWidth <= 409){
             element.style.opacity = scrollPercent;
-        element.style.transform = `translateX(${20 * (1 - scrollPercent)}vw)`;
+        element.style.transform = `translateX(${15 * (1 - scrollPercent)}vw)`;
         }
         
     });
@@ -47,7 +47,7 @@ function scrollAnimation2() {
         }
         else if(window.innerWidth <=409){
             element.style.opacity = scrollPercent;
-        element.style.transform = `translateX(${20 * (1 - scrollPercent)}vw)`;
+        element.style.transform = `translateX(${15 * (1 - scrollPercent)}vw)`;
         }
     });
 }
