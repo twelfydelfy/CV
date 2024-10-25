@@ -119,20 +119,3 @@ function toggleColors() {
     localStorage.setItem('isLightMode', false);
 }
 toggleColors();
-
-
-const prj2 = document.querySelector('.prj2');
-const prj2hidden = document.querySelector('.prj2hidden');
-var prj2a = 0;  
-
-prj2.addEventListener('click', function() {
-    if (prj2a === 0) {
-        prj2.classList.add('active');
-        prj2hidden.classList.add('active');
-        prj2a = 1;  
-    } else if(prj2a===1){
-        prj2.classList.remove('active');
-        prj2hidden.classList.remove('active');
-        prj2a = 0;
-    }
-});

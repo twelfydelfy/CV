@@ -676,10 +676,6 @@ hr{
     }
     .prj1, .prj2, .prj3{
         transform: scale(0.8) !important;
-        overflow: hidden;
-    }
-    .prj2hidden{
-        transform: scale(0.8);
     }
     .prj2hidden p{
         font-size: 10px;
@@ -719,6 +715,7 @@ hr{
         align-self: center;
     }
     .prj2{
+        overflow-x:visible;
         margin-left: 0;
     }
     .prj2:hover .prj2hidden{
