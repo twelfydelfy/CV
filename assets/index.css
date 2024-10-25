@@ -549,9 +549,11 @@ hr{
     *{
         box-sizing: border-box;
     }
+
     body{
-        max-width:100vw;
-        width: auto;
+        max-width:100vw !important;
+        width: 100vw !important;
+        width: auto !important;
         overflow-x:hidden;
         white-space:nowrap;
     }
