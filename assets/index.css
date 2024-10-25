@@ -1,6 +1,11 @@
 html{
     scroll-behavior: smooth;
 }
+input, textarea{
+    outline: none;
+    border-radius: 4px;
+    padding: 4px 3px;
+}
 :root{
     --primary-color:#f2f2f2;
     --secondary-color: #000000;
@@ -470,7 +475,7 @@ p, h1, h2{
     background-color: var(--third-color);
     border: none;
     border-radius: 12px;
-    color: var(--primary-color);
+    color: white;
     align-items: center;
     text-align: center;
     font-size: 19px;
@@ -671,6 +676,7 @@ hr{
     }
     .prj1, .prj2, .prj3{
         transform: scale(0.8) !important;
+        overflow: hidden;
     }
     .prj2hidden{
         transform: scale(0.8);
