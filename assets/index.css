@@ -506,10 +506,8 @@ hr{
     font-weight: 400;
 }
 
-@media (min-width: 900px) and (max-width:1600px) {
-    html{
-        overflow-y: hidden;
-    }
+@media (min-width: 1026px) and (max-width:1600px) {
+    
     .projects-grid, .projects{
         transform: scale(0.89);
         margin-left: 6.5%;
@@ -545,7 +543,7 @@ hr{
         margin-left: 0;
     }
 }
-@media (max-width: 480px){
+@media (max-width: 1025px){
     *{
         overflow-x: hidden;
     }
@@ -601,14 +599,15 @@ hr{
     }
     .right-side img, .circle1{
         transform: scale(0.6);
-        margin-left: -15%;
-    }
-    .right-side img{
-        margin-left: -20%;
+        margin-left: 0;
+        margin-right: 0;
     }
     .right-side{
         margin-left: 0;
-        margin-top: -100px;
+        margin-right: 0;
+        margin-top: -50px;
+        display: flex;
+        justify-content: center;
     }
     .left-side{
         justify-content: center;
@@ -621,10 +620,6 @@ hr{
         width: 100px;
         height: 35px;
         font-size: 14px;
-    }
-    .left-2 img{
-        transform: scale(0.65);
-        margin-bottom: -6px;
     }
     .left31{
         font-size: 15.45px;    
@@ -755,6 +750,71 @@ hr{
         align-items: center;
     }
 }
+@media (min-width:720px) and (max-width: 1025px){
+    .header-text a{
+        font-size: 20px;
+    }
+    .hitext p{
+        font-size: 45px;
+    }
+    .left-1 p{
+        font-size: 30px;
+    }
+    .left-2 button{
+        width: 150px;
+        height: 57px;
+        font-size: 20px;
+    }
+    .left31{
+        font-size: 20px;
+    }
+    .left32{
+        font-size: 19px;
+    }
+    .black-bar{
+        margin-top: 52%;
+    }
+    .black-bar h1{
+        font-size: 27px;
+    }
+    .black-bar p{
+        font-size: 15px;
+    }
+    .right-side{
+        display: flex;
+        justify-content: center;
+    }
+    .right-side img, .circle1{
+        margin-left: 0;
+        transform: scale(0.8);
+    }
+    .about-me{
+        margin-top: 70%;
+    }
+    .about-me h1, .projects h1{
+        font-size: 32px;
+    }
+    .about-me h2{
+        font-size: 19px;
+    }
+    .about-me p, .projects p{
+        font-size: 17px;
+    }
+    .prj2{
+        transform: scale(0.9) !important  ;
+    }
+    .form-left-side h1{
+        font-size: 32px;
+    }
+    .form-left-side p, .form-left-side span{
+        font-size:17px;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1025px){
+    .black-bar{
+        margin-top: 40%;
+    }
+}
 @media(max-width:409px){
     .black-bar{
         width: 100%;
@@ -762,10 +822,6 @@ hr{
     }
     .right-side img, .circle1{
         transform: scale(0.55);
-        margin-left: -25%;
-    }
-    .right-side img{
-        margin-left: -30%
     }
     .about-me{
         margin-top: 130%;
