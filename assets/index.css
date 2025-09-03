@@ -1,6 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    margin: 0;
+}
 input, textarea{
     outline: none;
     border-radius: 4px;
@@ -316,11 +319,11 @@ p, h1, h2{
 }
 .projects-grid{
     display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 10vh;
-    column-gap: 52px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10vh auto 0 auto;
     width: 80%;
-    margin-left: 10vw;
+    justify-items: center;
+    margin-left: 10%;
 }
 .prj1, .prj2, .prj3{
     width: 407px;
@@ -328,22 +331,24 @@ p, h1, h2{
     border: 1px solid var(--secondary-color);
     filter: grayscale(100%);
     transition: all ease-out 0.15s;
+    z-index: 2;
 }
 .prj2{
-    margin-left: 35%;
-    border: none;
+    border: none; 
 }
 .prj2hidden{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     background-color: var(--sixth-color);
     opacity: 0;
     transform: scale(0.01);
     width: 90%;
     margin-left: 5%;
-    margin-top: -8px;
+    margin-top: -7px;
     padding-bottom: 5px;
+    height: 151px;
 }
 .prj2hidden h1{
     font-size: 20px;
