@@ -312,6 +312,7 @@ p, h1, h2{
     font-size: 22px;
     line-height: 1.8;
     font-weight: 400;
+    width: 85%;
 }
 .projects-grid{
     display: grid;
@@ -341,7 +342,8 @@ p, h1, h2{
     transform: scale(0.01);
     width: 90%;
     margin-left: 5%;
-    margin-top: -3px;
+    margin-top: -8px;
+    padding-bottom: 5px;
 }
 .prj2hidden h1{
     font-size: 20px;
@@ -374,7 +376,7 @@ p, h1, h2{
 .prj2 img, .prj1 img, .prj3 img{
     width: inherit;
     height: inherit;
-    object-fit: cover;
+    object-fit: scale-down;
 
 }
 
@@ -653,6 +655,7 @@ hr{
     }
     .about-me p, .projects p{
         font-size: 14px;
+        width: 100%;
         text-wrap: wrap;
     }
     .about-right-side img{
